@@ -18,4 +18,17 @@ public class Senior extends Student {
         this.credits = credits;
     }
 
+    public int getCredits(){
+        return credits;
+    }
+    public void setCredits(int credits){
+        this.credits = credits;
+    }
+
+
+    @Override
+    public String toString(){
+        return "Senior: "+getName()+ ", Age: "+getAge()+", GPA: "+getGPA()+ ", Credits "+ getCredits();
+    }
+
 }
