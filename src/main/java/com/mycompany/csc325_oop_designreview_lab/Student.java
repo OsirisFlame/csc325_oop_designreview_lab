@@ -8,12 +8,41 @@ package com.mycompany.csc325_oop_designreview_lab;
  *
  * @author MoaathAlrajab
  */
-public class Student {
-	// ToDo 1: Make this class a child of Human
+// ToDo 1: Make this class a child of Human
 
-	// ToDo 2: Fix the resulting errors
+    //connects Students as a subclass to its baseclass of Human
+public class Student extends Human{
+
+    // ToDo 2: Fix the resulting errors
+    //creates private variables that cant be accessed
+    private String address;
+    private double GPA;
+
+    //Allows you to input Student information such as name and age
+        public Student (String name, short age){
+        super(name, age);
+        }
+
+        //Allows you to input Student addresses while remaining private
+    public String getAddress(){
+        return address;
+    }
+
+    public void setAddress(String address){
+        this.address = address;
+    }
 
 	// ToDo 3: Add a field for GPA and create a setter and a getter
-	
+    // allows GPA to be accessed and altered while remaining private
+	public double getGPA(){
+        return GPA;
+    }
+
+    public void setGPA(double GPA){
+            this.GPA = GPA;
+    }
+
+
+
 	// ToDo 4: Add comments to your code
 }
