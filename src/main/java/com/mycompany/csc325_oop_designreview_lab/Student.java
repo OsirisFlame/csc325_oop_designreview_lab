@@ -42,6 +42,7 @@ public class Student extends Human{
             this.GPA = GPA;
     }
 
+    //Base override method for student INFO
     @Override
     public String toString(){
     return "Student: "+getName()+ ", Age: "+getAge()+", GPA: "+getGPA();

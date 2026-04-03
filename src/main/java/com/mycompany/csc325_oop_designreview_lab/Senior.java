@@ -18,6 +18,7 @@ public class Senior extends Student {
         this.credits = credits;
     }
 
+    //Getters and setters for Senior in its Class
     public int getCredits(){
         return credits;
     }
@@ -25,7 +26,7 @@ public class Senior extends Student {
         this.credits = credits;
     }
 
-
+    //Override method to print the Seniors info
     @Override
     public String toString(){
         return "Senior: "+getName()+ ", Age: "+getAge()+", GPA: "+getGPA()+ ", Credits "+ getCredits();
