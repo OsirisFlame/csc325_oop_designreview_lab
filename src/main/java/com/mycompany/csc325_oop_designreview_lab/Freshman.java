@@ -20,5 +20,10 @@ public class Freshman extends Student {
     public void setCredits(int credits) {
         this.credits = credits;
     }
+    @Override
+    public String toString(){
+        return "Freshman: "+getName()+ ", Age: "+getAge()+", GPA: "+getGPA()+ ", Credits "+ getCredits();
+
+    }
 
 }

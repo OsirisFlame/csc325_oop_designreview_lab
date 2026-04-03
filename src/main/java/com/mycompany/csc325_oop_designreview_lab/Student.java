@@ -8,12 +8,12 @@ package com.mycompany.csc325_oop_designreview_lab;
  *
  * @author MoaathAlrajab
  */
-// ToDo 1: Make this class a child of Human
+// ToDo 1: Make this class a child of Human (done)
 
     //connects Students as a subclass to its baseclass of Human
 public class Student extends Human{
 
-    // ToDo 2: Fix the resulting errors
+    // ToDo 2: Fix the resulting errors (done)
     //creates private variables that cant be accessed
     private String address;
     private double GPA;
@@ -32,7 +32,7 @@ public class Student extends Human{
         this.address = address;
     }
 
-	// ToDo 3: Add a field for GPA and create a setter and a getter
+	// ToDo 3: Add a field for GPA and create a setter and a getter (done)
     // allows GPA to be accessed and altered while remaining private
 	public double getGPA(){
         return GPA;
@@ -42,7 +42,10 @@ public class Student extends Human{
             this.GPA = GPA;
     }
 
+    @Override
+    public String toString(){
+    return "Student: "+getName()+ ", Age: "+getAge()+", GPA: "+getGPA();
+    }
 
-
-	// ToDo 4: Add comments to your code
+	// ToDo 4: Add comments to your code (done)
 }
